@@ -1,6 +1,11 @@
 -- import: sarvom.github.io/trizwit/assets
 -- import: sarvom.github.io/trizwit/lib
 
--- lib.navbar:
-name: Trizwit
+-- lib.navbar: 
+name: Zindot
+text1: Home
 
+-- lib.hero: 
+title: WEB 3.0 Development and Consulting
+cta-text-1: Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
+pic: $assets.files.images.hero_bg.png
