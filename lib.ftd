@@ -27,34 +27,34 @@ types: $opensans-typography.types
 -- ftd.text: $navbar.name
 padding-left.px: 10
 padding-bottom.px: 5
-color: #57028f
+color: #4e46e5
 role: $inherited.types.heading-medium
 
 -- end: ftd.row
 
 -- ftd.text: $navbar.text1
-color: #c091fb
+color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: /zindot/
 
 -- ftd.text: Services
-color: #c091fb
+color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
 
--- ftd.text: Training
-color: #c091fb
+-- ftd.text: About
+color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: training/
 
 -- ftd.text: Contact Us
-color: #c091fb
+color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
@@ -88,7 +88,7 @@ border-top-left-radius.px: 10
 border-top-right-radius.px: 10
 border-bottom-left-radius.px: 10
 border-bottom-right-radius.px: 10
-background.solid: #A855F7
+background.solid: #4e46e5
 border-color: #c091fb
 color: white
 
@@ -122,7 +122,7 @@ types: $opensans-typography.types
 types: $opensans-typography.types
 
 -- ftd.text: $hero.title
-color: #000000
+color: #4e46e5
 role: $inherited.types.heading-hero
 
 
@@ -148,3 +148,41 @@ src: $hero.pic
 -- end: ftd.row
 
 -- end: hero
+
+
+
+
+
+
+
+
+
+
+-- component about:
+caption title:
+body body:
+
+-- ftd.column:
+align-content: center
+padding-top.px: 62
+types: $opensans-typography.types
+id: services
+
+-- ftd.text: $about.title
+color: #000000
+role: $inherited.types.heading-large
+
+-- ftd.text: 
+align-self: center
+role: $inherited.types.heading-tiny
+padding-left.px: 300
+padding-right.px: 300
+padding-top.px: 10
+padding-bottom.px: 30
+text-align: center
+
+$about.body
+
+-- end: ftd.column
+
+-- end: about
