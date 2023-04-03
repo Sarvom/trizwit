@@ -1,0 +1,70 @@
+-- import: sarvom.github.io/trizwit/assets
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/trizwit/common
+
+-- component navbar:
+string name:
+
+-- ftd.row:
+align-content: left
+width: fill-container
+border-width.px: 10
+border-color: white
+padding-horizontal.px: 40 
+spacing.fixed.px: 40
+margin-bottom.px: 10
+types: $opensans-typography.types
+shadow: $common.navbar
+background.solid: #ffffff
+sticky: true
+
+-- ftd.row:
+align-self: start
+width: fill-container
+types: $opensans-typography.types
+
+
+-- ftd.image:
+src: $assets.files.images.trizwit.jpeg
+height.fixed.px: 50
+
+-- ftd.text: $navbar.name
+padding-left.px: 10
+padding-bottom.px: 5
+color: #57028f
+role: $inherited.types.heading-medium
+
+-- end: ftd.row
+
+-- ftd.text: Home
+color: #c091fb
+padding-horizontal.px: 30 
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: /zindot/
+
+-- ftd.text: Services
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#services
+
+-- ftd.text: Training
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: training/
+
+-- ftd.text: Contact Us
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#contact
+
+-- end: ftd.row
+
+-- end: navbar
