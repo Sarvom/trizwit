@@ -9,3 +9,7 @@ text1: Home
 title: WEB 3.0 Development and Consulting
 cta-text-1: Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
 pic: $assets.files.images.hero_bg.png
+
+-- lib.about:
+title: Our Blockchain consulting process
+body: From ideation to complete development and business scaling solutions, we fulfill all your needs.
