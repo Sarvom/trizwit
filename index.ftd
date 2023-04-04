@@ -15,41 +15,7 @@ pic: $assets.files.images.hero_bg.png
 
 -- lib.about: Our Blockchain consulting process
 
-From ideation to complete development and business scaling solutions, we fulfill all your 
-needs.
+From ideation to complete development and business scaling solutions, we fulfill
+all your needs.
 
--- lib.stack-card: Ideation
-icon: $assets.files.images.web_native.png
-
-We discuss the feasibility of your blockchain project with our blockchain developers and 
-define the business goals and workflow for your system
-
--- lib.stack-card: Ideation
-icon: $assets.files.images.web_native.png
-
-We discuss the feasibility of your blockchain project with our blockchain developers and 
-define the business goals and workflow for your system
-
--- lib.stack-card: Ideation
-icon: $assets.files.images.web_native.png
-
-We discuss the feasibility of your blockchain project with our blockchain developers and 
-define the business goals and workflow for your system
-
--- lib.stack-card: Ideation
-icon: $assets.files.images.web_native.png
-
-We discuss the feasibility of your blockchain project with our blockchain developers and 
-define the business goals and workflow for your system
-
--- lib.stack-card: Ideation
-icon: $assets.files.images.web_native.png
-
-We discuss the feasibility of your blockchain project with our blockchain developers and 
-define the business goals and workflow for your system
-
--- lib.stack-card: Ideation
-icon: $assets.files.images.web_native.png
-
-We discuss the feasibility of your blockchain project with our blockchain developers and 
-define the business goals and workflow for your system
+-- lib.process:
