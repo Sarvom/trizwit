@@ -224,7 +224,7 @@ spacing.fixed.px: 40
 -- ftd.row:
 
 -- ftd.image:
-src: $assets.files.blockchain.png
+src: $assets.files.images.blockchain.png
 
 -- ftd.text: Blockchain
 role: $inherited.types.heading-tiny
@@ -234,7 +234,7 @@ role: $inherited.types.heading-tiny
 -- ftd.row:
 
 -- ftd.image:
-src: $assets.files.metaverse.png
+src: $assets.files.images.metaverse.png
 
 -- ftd.text: metaverse
 role: $inherited.types.heading-tiny
@@ -244,7 +244,7 @@ role: $inherited.types.heading-tiny
 -- ftd.row:
 
 -- ftd.image:
-src: $assets.files.metaverse.png
+src: $assets.files.images.metaverse.png
 
 -- ftd.text: metaverse
 role: $inherited.types.heading-tiny
@@ -254,7 +254,7 @@ role: $inherited.types.heading-tiny
 -- ftd.row:
 
 -- ftd.image:
-src: $assets.files.metaverse.png
+src: $assets.files.images.metaverse.png
 
 -- ftd.text: metaverse
 role: $inherited.types.heading-tiny
