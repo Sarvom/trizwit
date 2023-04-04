@@ -1,15 +1,20 @@
 -- import: sarvom.github.io/trizwit/assets
 -- import: sarvom.github.io/trizwit/lib
 
--- lib.navbar: 
-name: Trizwit.
+-- lib.navbar: Trizwit.
 text1: Home
+text2: Services
+text3: About
+text4: Contact Us
 
--- lib.hero: 
-title: WEB 3.0 Development and Consulting
+-- lib.hero: WEB 3.0 Development and Consulting
 cta-text-1: Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
 pic: $assets.files.images.hero_bg.png
 
--- lib.about:
-title: Our Blockchain consulting process
-body: From ideation to complete development and business scaling solutions, we fulfill all your needs.
+-- lib.domain-card:
+
+-- lib.about: Our Blockchain consulting process
+
+From ideation to complete development and business scaling solutions, we fulfill all your 
+needs.
+
