@@ -208,14 +208,17 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 align-self: center
 align-content: center
-padding-left.px: 300
-padding-right.px: 300
+margin-left.px: 200
+margin-right.px: 200
+padding.px: 30
 shadow: $common.box
+border-radius.px: 20
 
 -- ftd.text: Our Domains
-role: $inherited.types.heading-tiny
+role: $inherited.types.heading-small
 text-align: center
-padding.px: 10
+padding-bottom.px: 15
+color: #4e46e5
 
 -- ftd.row:
 spacing.fixed.px: 40
@@ -269,6 +272,55 @@ padding-top.px: 10
 -- end: ftd.column
 
 -- end: domain-card
+
+
+
+
+
+
+
+
+
+
+-- component stack-card:
+caption name:
+body body:
+ftd.image-src icon:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+
+-- ftd.column:
+align-self: start
+margin-left.px: 200
+margin-right.px: 200
+padding.px: 30
+shadow: $common.box
+border-radius.px: 20
+
+-- ftd.image:
+src: $stack-card.icon
+height.fixed.px: 50
+width.fixed.px: 50
+
+-- ftd.text: $stack-card.name
+text-align: start
+role: $inherited.types.heading-tiny
+
+
+-- ftd.text: 
+color: #353f4f
+role: $inherited.types.label-large
+text-align: start
+
+$stack-card.body
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: stack-card
+
 
 
 
