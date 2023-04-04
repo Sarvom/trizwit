@@ -3,8 +3,12 @@
 -- import: sarvom.github.io/trizwit/common
 
 -- component navbar:
-string name:
+caption name:
 string text1:
+string text2:
+string text3:
+string text4:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 align-content: left
@@ -39,21 +43,21 @@ text-align: center
 white-space: nowrap
 link: /zindot/
 
--- ftd.text: Services
+-- ftd.text: $navbar.text2
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
 
--- ftd.text: About
+-- ftd.text: $navbar.text3
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: training/
 
--- ftd.text: Contact Us
+-- ftd.text: $navbar.text4
 color: #000000
 role: $inherited.types.label-large
 text-align: center
@@ -75,6 +79,7 @@ link: index.html#contact
 
 -- component button:
 caption name:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.text: $button.name
 role: $inherited.types.label-large
@@ -107,6 +112,7 @@ color: white
 ftd.image-src pic:
 caption title:
 string cta-text-1:
+ftd.type-data types: $opensans-typography.types
 
 
 -- ftd.row:
@@ -186,3 +192,82 @@ $about.body
 -- end: ftd.column
 
 -- end: about
+
+
+
+
+
+
+
+
+
+
+-- component domain-card:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+align-self: center
+padding-left.px: 300
+padding-right.px: 300
+padding-top.px: 10
+padding-bottom.px: 30
+shadow: $common.box
+
+-- ftd.text: Our Domains
+role: $inherited.types.heading-tiny
+text-align: center
+
+-- ftd.column:
+padding.px: 10
+spacing.fixed.px: 40
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.blockchain.png
+
+-- ftd.text: Blockchain
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.metaverse.png
+
+-- ftd.text: metaverse
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.metaverse.png
+
+-- ftd.text: metaverse
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.metaverse.png
+
+-- ftd.text: metaverse
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: domain-card
+
+
+
+
+
