@@ -207,18 +207,17 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 align-self: center
+align-content: center
 padding-left.px: 300
 padding-right.px: 300
-padding-top.px: 10
-padding-bottom.px: 30
 shadow: $common.box
 
 -- ftd.text: Our Domains
 role: $inherited.types.heading-tiny
 text-align: center
-
--- ftd.column:
 padding.px: 10
+
+-- ftd.row:
 spacing.fixed.px: 40
 
 -- ftd.row:
@@ -228,6 +227,7 @@ src: $assets.files.images.blockchain.png
 
 -- ftd.text: Blockchain
 role: $inherited.types.heading-tiny
+padding-top.px: 10
 
 -- end: ftd.row
 
@@ -236,32 +236,35 @@ role: $inherited.types.heading-tiny
 -- ftd.image:
 src: $assets.files.images.metaverse.png
 
--- ftd.text: metaverse
+-- ftd.text: Metaverse
 role: $inherited.types.heading-tiny
+padding-top.px: 10
 
 -- end: ftd.row
 
 -- ftd.row:
 
 -- ftd.image:
-src: $assets.files.images.metaverse.png
+src: $assets.files.images.web_native.png
 
--- ftd.text: metaverse
+-- ftd.text: Web & Native
 role: $inherited.types.heading-tiny
+padding-top.px: 10
 
 -- end: ftd.row
 
 -- ftd.row:
 
 -- ftd.image:
-src: $assets.files.images.metaverse.png
+src: $assets.files.images.iot.png
 
--- ftd.text: metaverse
+-- ftd.text: IoT
 role: $inherited.types.heading-tiny
+padding-top.px: 10
 
 -- end: ftd.row
 
--- end: ftd.column
+-- end: ftd.row
 
 -- end: ftd.column
 
