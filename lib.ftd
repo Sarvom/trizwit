@@ -41,7 +41,7 @@ color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: /zindot/
+link: /trizwit/
 
 -- ftd.text: $navbar.text2
 color: #000000
@@ -55,7 +55,7 @@ color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: training/
+link: about/
 
 -- ftd.text: $navbar.text4
 color: #000000
@@ -101,6 +101,8 @@ spacing.fixed.px: 40
 
 -- ftd.image:
 src: $assets.files.images.blockchain.png
+height.fixed.px: 50
+width.fixed.px: 50
 
 -- ftd.text: Blockchain
 role: $inherited.types.heading-tiny
@@ -112,6 +114,8 @@ padding-top.px: 10
 
 -- ftd.image:
 src: $assets.files.images.metaverse.png
+height.fixed.px: 50
+width.fixed.px: 50
 
 -- ftd.text: Metaverse
 role: $inherited.types.heading-tiny
@@ -123,6 +127,8 @@ padding-top.px: 10
 
 -- ftd.image:
 src: $assets.files.images.web_native.png
+height.fixed.px: 50
+width.fixed.px: 50
 
 -- ftd.text: Web & Native
 role: $inherited.types.heading-tiny
@@ -134,6 +140,8 @@ padding-top.px: 10
 
 -- ftd.image:
 src: $assets.files.images.iot.png
+height.fixed.px: 50
+width.fixed.px: 50
 
 -- ftd.text: IoT
 role: $inherited.types.heading-tiny
@@ -400,6 +408,36 @@ blockchain product, from UI/UX to full front-end and back-end implementation
 
 
 
+
+
+
+
+
+
+-- component contact:
+caption name:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+align-self: center
+align-content: center
+width: fill-container
+
+-- ftd.text: $contact.name
+role: $inherited.types.heading-large
+color: #4e46e5
+
+-- ftd.iframe:
+src: https://form.typeform.com/to/Vl5flN4C
+width.fixed.px: 1200
+height.fixed.px: 600
+padding-horizontal.px: 150
+padding-top.px: 30
+padding-bottom.px: 50
+
+-- end: ftd.column
+
+-- end: contact
 
 
 
