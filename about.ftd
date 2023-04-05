@@ -1,0 +1,10 @@
+-- import: sarvom.github.io/trizwit/assets
+-- import: sarvom.github.io/trizwit/lib
+
+-- lib.navbar: Trizwit.
+text1: Home
+text2: Services
+text3: About
+text4: Contact Us
+
+-- lib.contact: Contact Us
