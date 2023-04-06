@@ -1,6 +1,8 @@
 -- import: sarvom.github.io/trizwit/assets
 -- import: sarvom.github.io/trizwit/lib
 
+-- ftd.document: Trizwit
+
 -- lib.navbar: Trizwit.
 text1: Home
 text2: Services
@@ -20,4 +22,10 @@ all your needs.
 
 -- lib.process:
 
+-- lib.counter: Trusted by companies across the world
+
+The best in class solutions designed to meet your requirements.
+
 -- lib.contact: Contact Us
+
+-- end: ftd.document
