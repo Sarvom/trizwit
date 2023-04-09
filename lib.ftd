@@ -630,7 +630,7 @@ border-radius.px: 1
 padding.px: 16
 
 -- ftd.image: 
-src: $assets.files.images.guidance.png
+src: $mission-card.icon
 height.fixed.px: 33
 width.fixed.px: 33
 
