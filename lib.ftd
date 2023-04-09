@@ -4,10 +4,10 @@
 
 -- component navbar:
 caption name:
-string text1:
-string text2:
-string text3:
-string text4:
+string text-1:
+string text-2:
+string text-3:
+string text-4:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
@@ -36,28 +36,28 @@ role: $inherited.types.heading-medium
 
 -- end: ftd.row
 
--- ftd.text: $navbar.text1
+-- ftd.text: $navbar.text-1
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: /trizwit/
 
--- ftd.text: $navbar.text2
+-- ftd.text: $navbar.text-2
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
 
--- ftd.text: $navbar.text3
+-- ftd.text: $navbar.text-3
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: about/
 
--- ftd.text: $navbar.text4
+-- ftd.text: $navbar.text-4
 color: #000000
 role: $inherited.types.label-large
 text-align: center
@@ -67,6 +67,7 @@ link: index.html#contact
 -- end: ftd.row
 
 -- end: navbar
+
 
 
 
@@ -203,28 +204,33 @@ ftd.type-data types: $opensans-typography.types
 
 
 -- ftd.row:
-align-content: right
 width: fill-container
-padding-right.px: 144
-padding-left.px: 144
-border-color: white
+max-width.fixed.px: 1240
+margin-horizontal.px: 100
+margin-top.px: 24
+padding-horizontal.px: 16
 types: $opensans-typography.types
 
 
 -- ftd.column:
-types: $opensans-typography.types
+max-width.fixed.px: 604
+padding-vertical.px: 32
+padding-horizontal.px: 8
+align-self: center
 
 -- ftd.text: $hero.title
 color: #4e46e5
 role: $inherited.types.heading-hero
+padding-vertical.px: 12
+height: fill-container
 
 -- ftd.text: $hero.cta-text-1
 color: #000000
 role: $inherited.types.heading-small 
-padding-vertical.px: 10
+padding-vertical.px: 12
 
 -- ftd.row:
-spacing.fixed.px: 10
+margin-vertical.px: 16
 
 -- button: Our Services
 
@@ -233,8 +239,8 @@ spacing.fixed.px: 10
 -- end: ftd.column
 
 -- ftd.image: 
-height.fixed.px: 450
-width.fixed.px: 550
+height.fixed.px: 453
+width.fixed.px: 604
 src: $hero.pic
 
 -- end: ftd.row
@@ -464,8 +470,8 @@ role: $inherited.types.heading-large
 -- ftd.text: 
 align-self: center
 role: $inherited.types.heading-small
-padding-left.px: 400
-padding-right.px: 400
+padding-left.px: 300
+padding-right.px: 300
 padding-top.px: 10
 text-align: center
 
@@ -601,6 +607,54 @@ $count-card.body
 -- end: ftd.column
 
 -- end: count-card
+
+
+
+
+
+
+
+
+
+
+-- component mission-card:
+caption title:
+ftd.img-src icon:
+body content:
+
+-- ftd.row:
+padding.px: 16
+border-radius.px: 1
+
+-- ftd.column:
+padding.px: 16
+
+-- ftd.image: 
+src: $assets.files.images.guidance.png
+height.fixed.px: 33
+width.fixed.px: 33
+
+-- end: ftd.column
+
+-- ftd.column:
+padding.px: 24
+border-left.px: 1
+
+-- ftd.text: $mission-card.title
+role: $inherited.types.heading-tiny
+
+-- ftd.text:
+role: $inherited.types.heading-tiny
+
+$mission-card.content
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: mission-card
+
+
 
 
 
