@@ -2,10 +2,10 @@
 -- import: sarvom.github.io/trizwit/lib
 
 -- lib.navbar: Trizwit.
-text1: Home
-text2: Services
-text3: About
-text4: Contact Us
+text-1: Home
+text-2: Services
+text-3: About
+text-4: Contact Us
 
 -- lib.page:
 
@@ -20,6 +20,24 @@ To become a leading Web3 consultancy company that empowers individuals, business
 organizations to harness the full potential of decentralized technologies and build a more 
 open, secure, and equitable internet.
 
+-- lib.mission card: Guidance
 
+To provide expert advice, guidance, and support to clients seeking to integrate Web3 
+technologies into their operations, products, and services.
+
+-- lib.mission card: Guidance
+
+To provide expert advice, guidance, and support to clients seeking to integrate Web3 
+technologies into their operations, products, and services.
+
+-- lib.mission card: Guidance
+
+To provide expert advice, guidance, and support to clients seeking to integrate Web3 
+technologies into their operations, products, and services.
+
+-- lib.mission card: Guidance
+
+To provide expert advice, guidance, and support to clients seeking to integrate Web3 
+technologies into their operations, products, and services.
 
 -- lib.contact: Contact Us

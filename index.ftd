@@ -3,26 +3,26 @@
 
 -- ftd.document: Trizwit
 
--- lib.navbar: Trizwit.
-text1: Home
-text2: Services
-text3: About
-text4: Contact Us
+-- lib.navbar: **Trizwit**
+text-1: Home
+text-2: Services
+text-3: About
+text-4: Contact Us
 
--- lib.hero: WEB 3.0 Development and Consulting
+-- lib.hero: **WEB 3.0 Development and Consulting**
 cta-text-1: Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
 pic: $assets.files.images.hero_bg.png
 
 -- lib.domain-card:
 
--- lib.about: Our Blockchain consulting process
+-- lib.about: **Our Blockchain consulting process**
 
 From ideation to complete development and business scaling solutions, we fulfill
 all your needs.
 
 -- lib.process:
 
--- lib.counter: Trusted by companies across the world
+-- lib.counter: **Trusted by companies across the world**
 
 The best in class solutions designed to meet your requirements.
 
