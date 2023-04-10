@@ -12,6 +12,177 @@ ftd.image-src linkedin:
 ftd.image-src twit:
 ftd.type-data types: $opensans-typography.types
 
+-- ftd.column:
+width: fill-container
+
+-- navbar-mobile:
+if: { ftd.device == "mobile" }
+name: $navbar.name
+text-1: $navbar.text-1
+text-2: $navbar.text-2
+text-3: $navbar.text-3
+text-4: $navbar.text-4
+linkedin: $navbar.linkedin
+twit: $navbar.twit
+types: $navbar.types
+
+-- navbar-desktop:
+if: { ftd.device == "desktop" }
+name: $navbar.name
+text-1: $navbar.text-1
+text-2: $navbar.text-2
+text-3: $navbar.text-3
+text-4: $navbar.text-4
+linkedin: $navbar.linkedin
+twit: $navbar.twit
+types: $navbar.types
+
+-- end: ftd.column
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+
+-- component navbar-mobile:
+caption name:
+string text-1:
+string text-2:
+string text-3:
+string text-4:
+ftd.image-src linkedin:
+ftd.image-src twit:
+ftd.type-data types: $opensans-typography.types
+ftd.image-src menu: $assets.files.images.menu.png
+ftd.image-src close: $assets.files.images.close.png
+boolean $open: false
+
+-- ftd.column:
+padding.px: 20
+width: fill-container
+height: hug-content
+shadow: $common.navbar
+background.solid: #ffffff
+
+-- ftd.row:
+spacing.fixed.px: 80
+
+-- ftd.row:
+align-self: start
+width: fill-container
+types: $opensans-typography.types
+
+-- ftd.text: $navbar-mobile.name
+padding-horizontal.px: 10
+color: #4e46e5
+margin-bottom.px: 10
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-left.px: 100
+
+-- ftd.image:
+if: { !navbar-mobile.open }
+height.fixed.px: 32
+src: $navbar-mobile.menu
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = true)
+
+-- ftd.image:
+if: { navbar-mobile.open }
+height.fixed.px: 32
+src: $navbar-mobile.close
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { navbar-mobile.open}
+width: fill-container
+margin-bottom.px: 4
+
+-- ftd.text: $navbar-mobile.text-1
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+margin-bottom.px: 4
+white-space: nowrap
+link: /zindot/
+
+-- ftd.text: $navbar-mobile.text-2
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+margin-bottom.px: 4
+white-space: nowrap
+link: index.html#services
+
+-- ftd.text: $navbar-mobile.text-3
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+margin-bottom.px: 4
+white-space: nowrap
+link: training/
+
+-- ftd.text: $navbar-mobile.text-4
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+margin-bottom.px: 4
+white-space: nowrap
+link: index.html#contact
+
+-- ftd.row:
+spacing.fixed.px: 30
+margin-bottom.px: 8
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar-mobile.linkedin
+link: https://www.linkedin.com/company/trizwit/
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar-mobile.twit
+link: https://twitter.com/trizwit
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+
+-- component navbar-desktop:
+caption name:
+string text-1:
+string text-2:
+string text-3:
+string text-4:
+ftd.image-src linkedin:
+ftd.image-src twit:
+ftd.type-data types: $opensans-typography.types
+
 -- ftd.row:
 align-content: left
 width: fill-container
@@ -30,7 +201,7 @@ align-content: left
 types: $opensans-typography.types
 
 
--- ftd.text: $navbar.name
+-- ftd.text: $navbar-desktop.name
 padding-left.px: 10
 padding-bottom.px: 5
 color: #4e46e5
@@ -42,28 +213,28 @@ role: $inherited.types.heading-medium
 spacing.fixed.px: 30
 width: fill-container
 
--- ftd.text: $navbar.text-1
+-- ftd.text: $navbar-desktop.text-1
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: /trizwit/
 
--- ftd.text: $navbar.text-2
+-- ftd.text: $navbar-desktop.text-2
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
 
--- ftd.text: $navbar.text-3
+-- ftd.text: $navbar-desktop.text-3
 color: #000000
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: about/
 
--- ftd.text: $navbar.text-4
+-- ftd.text: $navbar-desktop.text-4
 color: #000000
 role: $inherited.types.label-large
 text-align: center
@@ -79,19 +250,19 @@ margin-bottom.px: 8
 
 -- ftd.image:
 height.fixed.px: 32
-src: $navbar.linkedin
+src: $navbar-desktop.linkedin
 link: https://www.linkedin.com/company/trizwit/
 
 -- ftd.image:
 height.fixed.px: 32
-src: $navbar.twit
+src: $navbar-desktop.twit
 link: https://twitter.com/trizwit
 
 -- end: ftd.row
 
 -- end: ftd.row
 
--- end: navbar
+-- end: navbar-desktop
 
 
 
@@ -467,7 +638,7 @@ color: #4e46e5
 
 -- ftd.iframe:
 src: https://form.typeform.com/to/Vl5flN4C
-width.fixed.px: 1200
+width.fixed.px if { ftd.device == "desktop"}: 1200
 height.fixed.px: 600
 padding-horizontal.px: 150
 padding-top.px: 30
@@ -722,7 +893,8 @@ ftd.image-src avatar:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-padding-horizontal.px: 128
+padding-horizontal.px if {ftd.device == "desktop" }: 128
+padding-horizontal.px if {ftd.device == "mobile" }: 24
 padding-vertical.px: 48
 
 -- ftd.image:
