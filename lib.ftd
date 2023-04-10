@@ -398,15 +398,41 @@ caption title:
 string cta-text-1:
 ftd.type-data types: $opensans-typography.types
 
-
--- ftd.row:
+-- ftd.column:
 width: fill-container
-max-width.fixed.px: 1240
-margin-horizontal.px: 100
-margin-top.px: 24
-padding-horizontal.px: 16
-types: $opensans-typography.types
 
+-- hero-mobile:
+if: { ftd.device == "mobile" }
+pic: $hero.pic
+title: $hero.title
+cta-text-1: $hero.cta-text-1
+types: $hero.types
+
+-- hero-desktop:
+if: { ftd.device == "desktop" }
+pic: $hero.pic
+title: $hero.title
+cta-text-1: $hero.cta-text-1
+types: $hero.types
+
+-- end: ftd.column
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+
+-- component hero-mobile:
+ftd.image-src pic:
+caption title:
+string cta-text-1:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 max-width.fixed.px: 604
@@ -432,17 +458,73 @@ margin-vertical.px: 16
 
 -- end: ftd.row
 
--- end: ftd.column
-
 -- ftd.image: 
 height.fixed.px: 453
 width.fixed.px: 604
 src: $hero.pic
 
+-- end: ftd.column
+
+-- end: hero-mobile
+
+
+
+
+
+
+
+
+
+
+-- component hero-desktop:
+ftd.image-src pic:
+caption title:
+string cta-text-1:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: 1240
+margin-horizontal.px: 100
+margin-top.px: 24
+padding-horizontal.px: 16
+types: $opensans-typography.types
+
+
+-- ftd.column:
+max-width.fixed.px: 604
+padding-vertical.px: 32
+padding-horizontal.px: 8
+align-self: center
+
+-- ftd.text: $hero-desktop.title
+color: #4e46e5
+role: $inherited.types.heading-hero
+padding-vertical.px: 12
+height: fill-container
+
+-- ftd.text: $hero-desktop.cta-text-1
+color: #000000
+role: $inherited.types.heading-small 
+padding-vertical.px: 12
+
+-- ftd.row:
+margin-vertical.px: 16
+
+-- button: Our Services
+
 -- end: ftd.row
 
--- end: hero
+-- end: ftd.column
 
+-- ftd.image: 
+height.fixed.px: 453
+width.fixed.px: 604
+src: $hero-desktop.pic
+
+-- end: ftd.row
+
+-- end: hero-desktop
 
 
 
@@ -478,6 +560,7 @@ margin-bottom.px: 8
 align-self: center
 role: $inherited.types.heading-small
 padding-top.px: 10
+padding-horizontal.px: 200
 text-align: center
 color: #353f4f
 
@@ -513,6 +596,7 @@ padding.px: 30
 shadow: $common.box
 border-radius.px: 20
 width: fill-container
+height.fixed.px: 250
 
 -- ftd.image:
 src: $stack-card.icon
@@ -552,16 +636,15 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 align-self: center
-margin-left.px: 200
-margin-right.px: 200
 align-content: center
-border-width.px: 100
 border-color: #ffffff
 width: fill-container
 
 -- ftd.row:
 width: fill-container
+align-content: center
 spacing.fixed.px: 30
+margin-horizontal.px: 160
 border-width.px: 10
 color: #ffffff
 
@@ -585,8 +668,10 @@ business requirements and the type of blockchain.
 -- end: ftd.row
 
 -- ftd.row:
+align-content: center
 width: fill-container
 border-width.px: 10
+margin-horizontal.px: 160
 spacing.fixed.px: 30
 color: #ffffff
 
@@ -705,24 +790,43 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 align-self: center
 align-content: center
-padding-vertical.px: 150
+width: fill-container
+margin-vertical.px: 128
+margin-horizontal.px: 8
 
 -- ftd.text: $counter.title
 color: #000000
 role: $inherited.types.heading-large
+text-align: center
 
 -- ftd.text: 
 align-self: center
 role: $inherited.types.heading-small
-padding-left.px: 300
-padding-right.px: 300
-padding-vertical.px: 10
+padding-vertical.px: 24
 text-align: center
 color: #353f4f
 
 $counter.body
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+
+-- count-card: 18
+
+Project
+
+-- count-card: 6
+
+Partner Companies
+
+-- count-card: 50+
+
+Smart Contracts On-Chain
+
+-- end: ftd.column
+
 -- ftd.row:
+if: { ftd.device == "desktop" }
 
 -- count-card: 18
 
@@ -757,12 +861,12 @@ body body:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
+width.fixed.px: 400
 align-self: center
 align-content: center
-padding.px: 30
+padding-vertical.px: 32
 shadow: $common.box
 border-radius.px: 20
-width: fill-container
 
 -- ftd.text: $count-card.name
 text-align: center
@@ -772,7 +876,6 @@ role: $inherited.types.heading-hero
 
 -- ftd.text: 
 color: #353f4f
-padding-horizontal.px: 100
 role: $inherited.types.heading-tiny
 text-align: center
 
