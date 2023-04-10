@@ -116,7 +116,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
-link: /zindot/
+link: /trizwit/
 
 -- ftd.text: $navbar-mobile.text-2
 color: #c091fb
@@ -132,7 +132,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
-link: training/
+link: about/
 
 -- ftd.text: $navbar-mobile.text-4
 color: #c091fb
