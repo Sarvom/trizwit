@@ -68,7 +68,7 @@ padding.px: 20
 width: fill-container
 height: hug-content
 shadow: $common.navbar
-background.solid: #ffffff
+background.solid: #ffffffff
 
 -- ftd.row:
 spacing.fixed.px: 80
@@ -186,20 +186,19 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.row:
 align-content: left
 width: fill-container
-border-width.px: 10
 border-color: white
 padding-horizontal.px: 40 
 spacing.fixed.px: 40
 margin-bottom.px: 10
 types: $opensans-typography.types
 shadow: $common.navbar
-background.solid: #ffffff
+background.solid: #ffffffff
 sticky: true
+
 
 -- ftd.row:
 align-content: left
 types: $opensans-typography.types
-
 
 -- ftd.text: $navbar-desktop.name
 padding-left.px: 10
@@ -498,17 +497,18 @@ caption title:
 string cta-text-1:
 ftd.type-data types: $opensans-typography.types
 
+-- ftd.column:
+width: fill-container
+
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: 768
-margin-horizontal.px: 100
 margin-top.px: 24
 padding-horizontal.px: 16
 types: $opensans-typography.types
 
-
 -- ftd.column:
-max-width.fixed.px: 604
+width.fixed.percent: 40
+margin-left.percent: 10
 padding-vertical.px: 32
 padding-horizontal.px: 8
 align-self: center
@@ -534,11 +534,12 @@ margin-vertical.px: 16
 -- end: ftd.column
 
 -- ftd.image: 
-width.fixed.px: 604
-height.fixed.px: 453
+width.fixed.percent: 45
 src: $hero-desktop.pic
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: hero-desktop
 
@@ -911,7 +912,6 @@ $counter.body
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
-background.solid: green
 
 -- count-card: 18
 
@@ -930,6 +930,7 @@ Smart Contracts On-Chain
 -- ftd.row:
 if: { ftd.device == "desktop" }
 width: fill-container
+align-content: center
 
 -- count-card: 18
 
