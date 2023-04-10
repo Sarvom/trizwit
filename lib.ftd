@@ -8,6 +8,8 @@ string text-1:
 string text-2:
 string text-3:
 string text-4:
+ftd.image-src linkedin:
+ftd.image-src twit:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
@@ -36,6 +38,10 @@ role: $inherited.types.heading-medium
 
 -- end: ftd.row
 
+-- ftd.row:
+spacing.fixed.px: 30
+width: fill-container
+
 -- ftd.text: $navbar.text-1
 color: #000000
 role: $inherited.types.label-large
@@ -63,6 +69,25 @@ role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#contact
+
+-- end: ftd.row
+
+-- ftd.row:
+align-self: end
+spacing.fixed.px: 30
+margin-bottom.px: 8
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar.linkedin
+link: https://www.linkedin.com/company/trizwit/
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar.twit
+link: https://twitter.com/trizwit
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -262,25 +287,32 @@ body body:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
-align-self: center
-align-content: center
-padding-top.px: 62
+padding-horizontal.px: 20
+padding-top.px: 96
+margin-horizontal.px: 160
 id: services
 
+-- ftd.column:
+align-self: center
+align-content: center
+margin-bottom.px: 80
+
 -- ftd.text: $about.title
+align-self: center
 color: #000000
 role: $inherited.types.heading-large
+margin-bottom.px: 8
 
 -- ftd.text: 
 align-self: center
 role: $inherited.types.heading-small
-padding-left.px: 400
-padding-right.px: 400
 padding-top.px: 10
 text-align: center
 color: #353f4f
 
 $about.body
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -453,60 +485,31 @@ padding-bottom.px: 50
 
 
 
--- component vision:
-caption title:
-body body:
+
+-- component page:
+optional caption title: 
+optional body body: 
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 align-self: center
 align-content: center
-padding-top.px: 62
+padding-vertical.px: 80
+padding-horizontal.px: 20
+margin-horizontal.px if { ftd.device == "desktop" }: 80
 
--- ftd.text: $vision.title
+-- ftd.text: $page.title
+if: { $page.title != NULL }
 color: #4e46e5
 role: $inherited.types.heading-large
 
 -- ftd.text: 
+if: { $page.body != NULL }
 align-self: center
 role: $inherited.types.heading-small
-padding-left.px: 300
-padding-right.px: 300
-padding-top.px: 10
-text-align: center
-
-$vision.body
-
--- end: ftd.column
-
--- end: vision
-
-
-
-
-
-
-
-
-
-
--- component page:
-body body:
-ftd.type-data types: $opensans-typography.types
-
--- ftd.column:
-align-self: center
-align-content: center
-padding-top.px: 62
-
--- ftd.text: 
-align-self: center
-role: $inherited.types.heading-small
-padding-left.px: 300
-padding-right.px: 300
-padding-bottom.px: 150
 text-align: center
 color: #4B5563
+margin-bottom.px: 24
 
 $page.body
 
@@ -618,19 +621,26 @@ $count-card.body
 
 
 -- component mission-card:
-caption title:
-ftd.img-src icon:
-body content:
+caption name:
+body body:
+ftd.image-src icon:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 padding.px: 16
-border-radius.px: 1
+max-width.fixed.px: 300
+height.fixed.px: 300
+border-width.px: 1
+border-radius.px: 20
+border-color: #4e46e5
 
 -- ftd.column:
+align-self: center
+align-content: center
 padding.px: 16
 
--- ftd.image: 
-src: $assets.files.images.guidance.png
+-- ftd.image:
+src: $mission-card.icon
 height.fixed.px: 33
 width.fixed.px: 33
 
@@ -638,21 +648,121 @@ width.fixed.px: 33
 
 -- ftd.column:
 padding.px: 24
-border-left.px: 1
+border-left-width.px: 1
 
--- ftd.text: $mission-card.title
+-- ftd.text: $mission-card.name
 role: $inherited.types.heading-tiny
+margin-bottom.px: 8
 
--- ftd.text:
-role: $inherited.types.heading-tiny
+-- ftd.text: 
+role: $inherited.types.label-large
 
-$mission-card.content
+$mission-card.body
 
 -- end: ftd.column
 
 -- end: ftd.row
 
 -- end: mission-card
+
+
+
+
+
+
+
+
+
+
+
+-- component social-media:
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.image:
+src: $assets.files.images.linkedin.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://www.linkedin.com/company/zindot/
+
+-- ftd.image:
+src: $assets.files.images.linkedin.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: mailto:info@zindot.in
+
+-- ftd.image:
+src: $assets.files.images.linkedin.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://wa.me/916238296993
+
+-- end: ftd.row
+
+-- end: social-media
+
+
+
+
+
+
+
+
+
+
+-- component team-card:
+caption name:
+string pos:
+string job:
+ftd.image-src avatar:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+padding-horizontal.px: 128
+padding-vertical.px: 48
+
+-- ftd.image:
+src: $team-card.avatar
+
+-- ftd.column:
+padding-left.px: 32
+
+-- ftd.text: $team-card.name
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $team-card.pos
+role: $inherited.types.heading-tiny
+margin-bottom.px: 4
+
+-- ftd.text: $team-card.job
+role: $inherited.types.heading-tiny
+margin-bottom.px: 12
+
+-- social-media:
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: team-card
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

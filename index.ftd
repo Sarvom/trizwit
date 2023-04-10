@@ -8,6 +8,8 @@ text-1: Home
 text-2: Services
 text-3: About
 text-4: Contact Us
+linkedin: $assets.files.images.linkedin.png
+twit: $assets.files.images.twitter.png
 
 -- lib.hero: **WEB 3.0 Development and Consulting**
 cta-text-1: Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
@@ -17,8 +19,8 @@ pic: $assets.files.images.hero_bg.png
 
 -- lib.about: **Our Blockchain consulting process**
 
-From ideation to complete development and business scaling solutions, we fulfill
-all your needs.
+** From ideation to complete development and business scaling solutions, we fulfill
+all your needs.**
 
 -- lib.process:
 

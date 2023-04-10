@@ -1,11 +1,15 @@
 -- import: sarvom.github.io/trizwit/assets
 -- import: sarvom.github.io/trizwit/lib
 
--- lib.navbar: Trizwit.
+-- ftd.document: Trizwit
+
+-- lib.navbar: **Trizwit**
 text-1: Home
 text-2: Services
 text-3: About
 text-4: Contact Us
+linkedin: $assets.files.images.linkedin.png
+twit: $assets.files.images.twitter.png
 
 -- lib.page:
 
@@ -14,30 +18,100 @@ those in the blockchain and web3 space realise their dreams with the best in cla
 technology available. We are committed to build robust and scalable products without 
 compromising on the quality.
 
--- lib.vision: VISION
+-- lib.page: VISION
 
 To become a leading Web3 consultancy company that empowers individuals, businesses, and 
 organizations to harness the full potential of decentralized technologies and build a more 
 open, secure, and equitable internet.
 
--- lib.mission card: Guidance
+-- lib.page: MISSION
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+
+-- lib.mission-card: **Guidance**
+icon: $assets.files.images.guidance.png
 
 To provide expert advice, guidance, and support to clients seeking to integrate Web3 
 technologies into their operations, products, and services.
 
--- lib.mission card: Guidance
+-- lib.mission-card: **Innovation**
+icon: $assets.files.images.innovation.png
+
+To foster development of innovative and impactful Web3 solutions that address real-world 
+challenges and opportunities.
+
+-- lib.mission-card: **Growth**
+icon: $assets.files.images.growth.png
+
+To contribute to the growth and evolution of the Web3 ecosystem by collaborating with 
+other stakeholders and sharing knowledge and resources.
+
+-- lib.mission-card: **Educate**
+icon: $assets.files.images.educate.png
+
+To educate and raise awareness about the benefits and implications of decentralized 
+technologies and promote their adoption and responsible use.
+
+-- end: ftd.column
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+padding-horizontal.px: 32
+
+-- ftd.row:
+width: fill-container
+margin-horizontal.px: 116
+spacing.fixed.px: 30
+
+-- lib.mission-card: **Guidance**
+icon: $assets.files.images.guidance.png
 
 To provide expert advice, guidance, and support to clients seeking to integrate Web3 
 technologies into their operations, products, and services.
 
--- lib.mission card: Guidance
+-- lib.mission-card: **Innovation**
+icon: $assets.files.images.innovation.png
 
-To provide expert advice, guidance, and support to clients seeking to integrate Web3 
-technologies into their operations, products, and services.
+To foster development of innovative and impactful Web3 solutions that address real-world 
+challenges and opportunities.
 
--- lib.mission card: Guidance
+-- lib.mission-card: **Growth**
+icon: $assets.files.images.growth.png
 
-To provide expert advice, guidance, and support to clients seeking to integrate Web3 
-technologies into their operations, products, and services.
+To contribute to the growth and evolution of the Web3 ecosystem by collaborating with 
+other stakeholders and sharing knowledge and resources.
+
+-- lib.mission-card: **Educate**
+icon: $assets.files.images.educate.png
+
+To educate and raise awareness about the benefits and implications of decentralized 
+technologies and promote their adoption and responsible use.
+
+-- end: ftd.row
+
+-- lib.page: **Our Team**
+
+-- lib.team-card: **Able Varghese**
+pos: Co-Founder
+job: DevOps Engineer
+avatar: $assets.files.images.man.webp
+
+-- lib.team-card: **Athul A Kumar**
+pos: Co-Founder
+job: Front-End Developer
+avatar: $assets.files.images.man2.webp
+
+-- lib.team-card: **AswinRaj K**
+pos: Co-Founder
+job: Full Stack Developer
+avatar: $assets.files.images.man3.webp
+
+-- lib.team-card: **Binil V Jacob**
+pos: Co-Founder
+job: Smart Contract Developer
+avatar: $assets.files.images.man4.webp
 
 -- lib.contact: Contact Us
+
+-- end: ftd.document 
