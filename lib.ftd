@@ -451,7 +451,7 @@ string cta-text-1:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
-max-width.fixed.px: 604
+width: fill-container
 padding-vertical.px: 32
 padding-horizontal.px: 16
 align-self: center
@@ -500,7 +500,7 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: 1240
+max-width.fixed.px: 768
 margin-horizontal.px: 100
 margin-top.px: 24
 padding-horizontal.px: 16
@@ -534,8 +534,8 @@ margin-vertical.px: 16
 -- end: ftd.column
 
 -- ftd.image: 
-height.fixed.px: 453
 width.fixed.px: 604
+height.fixed.px: 453
 src: $hero-desktop.pic
 
 -- end: ftd.row
@@ -681,7 +681,6 @@ width: fill-container
 align-content: center
 
 -- ftd.column:
-;; background.solid: Yellow
 spacing.fixed.px: 30
 margin-horizontal.px: 20
 border-width.px: 10
@@ -745,7 +744,6 @@ width: fill-container
 align-content: center
 
 -- ftd.column:
-;; background.solid: Red
 
 -- ftd.row:
 spacing.fixed.px: 30
@@ -913,6 +911,7 @@ $counter.body
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
+background.solid: green
 
 -- count-card: 18
 
@@ -930,6 +929,7 @@ Smart Contracts On-Chain
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
+width: fill-container
 
 -- count-card: 18
 
@@ -1102,8 +1102,7 @@ ftd.image-src avatar:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-padding-horizontal.px if {ftd.device == "desktop" }: 128
-padding-horizontal.px if {ftd.device == "mobile" }: 24
+padding-horizontal.px: 128
 padding-vertical.px: 48
 
 -- ftd.image:
