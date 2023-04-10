@@ -678,11 +678,10 @@ types: $process.types
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
-if: { ftd.device == "mobile" }
-align-self: center
 width: fill-container
 
 -- ftd.column:
+background.solid: Yellow
 align-content: center
 spacing.fixed.px: 30
 margin-horizontal.px: 20
@@ -743,10 +742,11 @@ blockchain product, from UI/UX to full front-end and back-end implementation
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
-align-self: center
+width: fill-container
+align-content: center
 
 -- ftd.column:
-width: fill-container
+background.solid: Yellow
 
 -- ftd.row:
 spacing.fixed.px: 30
@@ -1150,18 +1150,15 @@ background.solid: Black
 
 -- ftd.row:
 align-self: center
-width: fill-container
-spacing.fixed.px if { ftd.device == "desktop" }: 800
 margin-horizontal.px: 131
-margin-bottom.px: 12
-background.solid: Yellow
+margin-vertical.px: 12
 
 -- ftd.text: **Trizwit**
 color: #4e46e5
 role: $inherited.types.heading-small
 
 -- ftd.row:
-background.solid: red
+margin.px: 12
 
 -- social-media:
 
