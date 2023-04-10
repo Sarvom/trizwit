@@ -90,6 +90,28 @@ technologies and promote their adoption and responsible use.
 
 -- end: ftd.row
 
+-- lib.page: **Our Team**
+
+-- lib.team-card: **Able Varghese**
+pos: Co-Founder
+job: DevOps Engineer
+avatar: $assets.files.images.man.webp
+
+-- lib.team-card: **Athul A Kumar**
+pos: Co-Founder
+job: Front-End Developer
+avatar: $assets.files.images.man2.webp
+
+-- lib.team-card: **AswinRaj K**
+pos: Co-Founder
+job: Full Stack Developer
+avatar: $assets.files.images.man3.webp
+
+-- lib.team-card: **Binil V Jacob**
+pos: Co-Founder
+job: Smart Contract Developer
+avatar: $assets.files.images.man4.webp
+
 -- lib.contact: Contact Us
 
 -- end: ftd.document 

@@ -681,14 +681,6 @@ $mission-card.body
 spacing.fixed.px: 10
 
 -- ftd.image:
-src: $assets.files.images.insta.png
-height.fixed.px: 30
-width.fixed.px: 30
-color: #353f4f
-link: https://www.instagram.com/zindotinnovations/
-
-
--- ftd.image:
 src: $assets.files.images.linkedin.png
 height.fixed.px: 30
 width.fixed.px: 30
@@ -696,14 +688,14 @@ color: #353f4f
 link: https://www.linkedin.com/company/zindot/
 
 -- ftd.image:
-src: $assets.files.images.mail.png
+src: $assets.files.images.linkedin.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
 link: mailto:info@zindot.in
 
 -- ftd.image:
-src: $assets.files.images.whatsapp.png
+src: $assets.files.images.linkedin.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
@@ -725,21 +717,30 @@ link: https://wa.me/916238296993
 -- component team-card:
 caption name:
 string pos:
+string job:
 ftd.image-src avatar:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
+padding-horizontal.px: 128
+padding-vertical.px: 48
 
 -- ftd.image:
 src: $team-card.avatar
 
 -- ftd.column:
+padding-left.px: 32
 
 -- ftd.text: $team-card.name
 role: $inherited.types.heading-tiny
 
 -- ftd.text: $team-card.pos
 role: $inherited.types.heading-tiny
+margin-bottom.px: 4
+
+-- ftd.text: $team-card.job
+role: $inherited.types.heading-tiny
+margin-bottom.px: 12
 
 -- social-media:
 
