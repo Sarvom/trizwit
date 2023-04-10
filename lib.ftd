@@ -461,7 +461,7 @@ margin-vertical.px: 16
 -- ftd.image: 
 height.fixed.px: 150
 width.fixed.px: 200
-src: $hero.pic
+src: $hero-mobile.pic
 
 -- end: ftd.column
 
