@@ -440,13 +440,13 @@ padding-vertical.px: 32
 padding-horizontal.px: 8
 align-self: center
 
--- ftd.text: $hero.title
+-- ftd.text: $hero-mobile.title
 color: #4e46e5
 role: $inherited.types.heading-hero
 padding-vertical.px: 12
 height: fill-container
 
--- ftd.text: $hero.cta-text-1
+-- ftd.text: $hero-mobile.cta-text-1
 color: #000000
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
