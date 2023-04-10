@@ -8,7 +8,7 @@ string text-1:
 string text-2:
 string text-3:
 string text-4:
-ftd.image-src link:
+ftd.image-src linkedin:
 ftd.image-src twit:
 ftd.type-data types: $opensans-typography.types
 
@@ -37,6 +37,10 @@ color: #4e46e5
 role: $inherited.types.heading-medium
 
 -- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 30
+width: fill-container
 
 -- ftd.text: $navbar.text-1
 color: #000000
@@ -69,16 +73,21 @@ link: index.html#contact
 -- end: ftd.row
 
 -- ftd.row:
-align-self: right
+align-self: end
 spacing.fixed.px: 30
+margin-bottom.px: 8
 
 -- ftd.image:
 height.fixed.px: 32
-src: $navbar.link
+src: $navbar.linkedin
+link: https://www.linkedin.com/company/trizwit/
 
 -- ftd.image:
 height.fixed.px: 32
 src: $navbar.twit
+link: https://twitter.com/trizwit
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -655,6 +664,21 @@ $mission-card.body
 -- end: ftd.row
 
 -- end: mission-card
+
+
+
+
+
+
+
+
+
+
+-- component team-card:
+caption name:
+string role:
+ftd.image-src avatar:
+ftd.image-src 
 
 
 
