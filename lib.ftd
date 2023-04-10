@@ -279,8 +279,7 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 align-self: center
 align-content: center
-margin-left.px: 200
-margin-right.px: 200
+margin-horizontal.px if { ftd.device == "desktop" }: 200
 padding.px: 30
 shadow: $common.box
 border-radius.px: 20
@@ -292,59 +291,50 @@ padding-bottom.px: 15
 color: #4e46e5
 
 -- ftd.row:
+if: { ftd.device == "mobile" }
+spacing.fixed.px: 40
+align-content: center
+
+-- ftd.column:
 spacing.fixed.px: 40
 
--- ftd.row:
+-- domain: Blockchain
+icon: $assets.files.images.blockchain.png
 
--- ftd.image:
-src: $assets.files.images.blockchain.png
-height.fixed.px: 50
-width.fixed.px: 50
+-- domain: Web & Native
+icon: $assets.files.images.web_native.png
 
--- ftd.text: Blockchain
-role: $inherited.types.heading-tiny
-padding-top.px: 10
+-- end: ftd.column
 
--- end: ftd.row
+-- ftd.column:
+spacing.fixed.px: 40
 
--- ftd.row:
+-- domain: Metaverse
+icon: $assets.files.images.metaverse.png
 
--- ftd.image:
-src: $assets.files.images.metaverse.png
-height.fixed.px: 50
-width.fixed.px: 50
+-- domain: IoT
+icon: $assets.files.images.iot.png
 
--- ftd.text: Metaverse
-role: $inherited.types.heading-tiny
-padding-top.px: 10
+-- end: ftd.column
 
 -- end: ftd.row
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
+spacing.fixed.px: 40
+align-content: center
 
--- ftd.image:
-src: $assets.files.images.web_native.png
-height.fixed.px: 50
-width.fixed.px: 50
+-- domain: Blockchain
+icon: $assets.files.images.blockchain.png
 
--- ftd.text: Web & Native
-role: $inherited.types.heading-tiny
-padding-top.px: 10
+-- domain: Metaverse
+icon: $assets.files.images.metaverse.png
 
--- end: ftd.row
+-- domain: Web & Native
+icon: $assets.files.images.web_native.png
 
--- ftd.row:
-
--- ftd.image:
-src: $assets.files.images.iot.png
-height.fixed.px: 50
-width.fixed.px: 50
-
--- ftd.text: IoT
-role: $inherited.types.heading-tiny
-padding-top.px: 10
-
--- end: ftd.row
+-- domain: IoT
+icon: $assets.files.images.iot.png
 
 -- end: ftd.row
 
@@ -354,6 +344,32 @@ padding-top.px: 10
 
 
 
+
+
+
+
+
+
+
+-- component domain:
+caption title:
+ftd.image-src icon:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+
+-- ftd.image:
+src: $domain.icon
+height.fixed.px: 50
+width.fixed.px: 50
+
+-- ftd.text: $domain.title
+role: $inherited.types.heading-tiny
+padding-top.px: 10
+
+-- end: ftd.row
+
+-- end: domain
 
 
 
