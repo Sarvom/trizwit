@@ -459,8 +459,8 @@ margin-vertical.px: 16
 -- end: ftd.row
 
 -- ftd.image: 
-height.fixed.px: 150
-width.fixed.px: 200
+height.fixed.px: 293
+width.fixed.px: 393
 src: $hero-mobile.pic
 
 -- end: ftd.column
@@ -542,7 +542,7 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 padding-horizontal.px: 20
 padding-top.px: 96
-margin-horizontal.px: 160
+margin-horizontal.px if { ftd.device == "desktop" }: 160
 id: services
 
 -- ftd.column:
@@ -551,16 +551,15 @@ align-content: center
 margin-bottom.px: 80
 
 -- ftd.text: $about.title
-align-self: center
+text-align: center
 color: #000000
 role: $inherited.types.heading-large
 margin-bottom.px: 8
 
 -- ftd.text: 
-align-self: center
 role: $inherited.types.heading-small
 padding-top.px: 10
-padding-horizontal.px: 200
+padding-horizontal.px if { ftd.device == "desktop" }: 200
 text-align: center
 color: #353f4f
 
@@ -635,13 +634,103 @@ $stack-card.body
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
+width: fill-container
+
+-- process-mobile:
+if: { ftd.device == "mobile" }
+types: $process.types
+
+-- process-desktop:
+if: { ftd.device == "desktop" }
+types: $process.types
+
+-- end: ftd.column
+
+-- end: process
+
+
+
+
+
+
+
+
+
+
+-- component process-mobile:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
 align-self: center
+width: fill-container
+
+-- ftd.column:
+width: fill-container
 align-content: center
-border-color: #ffffff
+spacing.fixed.px: 30
+margin-horizontal.px: 20
+border-width.px: 10
+color: #ffffff
+
+-- stack-card: Ideation
+icon: $assets.files.images.ideation.png
+
+We discuss the feasibility of your blockchain project with our blockchain developers and 
+define the business goals and workflow for your system
+
+-- stack-card: Assessment
+icon: $assets.files.images.assessment.png
+
+We analyze your existing solution and discover if it can be migrated to the blockchain.
+
+-- stack-card: Technical Component Definition
+icon: $assets.files.images.techcomponent.png
+
+Our blockchain consulting team identifies the right blockchain platform based on your 
+business requirements and the type of blockchain.
+
+-- stack-card: PoC
+icon: $assets.files.images.poc.png
+
+We create a framework and prototype to identify the use cases for the business with 
+minimum viable features.
+
+-- stack-card: Integration
+icon: $assets.files.images.integration.png
+
+Our Blockchain Consultants help clients identify if the blockchain technology can be 
+integrated into their business operations and environment.define the business goals and workflow for your system
+
+-- stack-card: Development
+icon: $assets.files.images.development.png
+
+Once you are ready to start blockchain technology development, we help you build the 
+blockchain product, from UI/UX to full front-end and back-end implementation
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: process-mobile
+
+
+
+
+
+
+
+
+
+
+-- component process-desktop:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+align-self: center
 width: fill-container
 
 -- ftd.row:
-width: fill-container
 align-content: center
 spacing.fixed.px: 30
 margin-horizontal.px: 160
@@ -669,7 +758,6 @@ business requirements and the type of blockchain.
 
 -- ftd.row:
 align-content: center
-width: fill-container
 border-width.px: 10
 margin-horizontal.px: 160
 spacing.fixed.px: 30
@@ -697,7 +785,7 @@ blockchain product, from UI/UX to full front-end and back-end implementation
 
 -- end: ftd.column
 
--- end: process
+-- end: process-desktop
 
 
 
