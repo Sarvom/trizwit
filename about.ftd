@@ -116,4 +116,6 @@ avatar: $assets.files.images.man4.webp
 
 -- lib.contact: Contact Us
 
+-- lib.footer:
+
 -- end: ftd.document 

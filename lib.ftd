@@ -453,7 +453,7 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 max-width.fixed.px: 604
 padding-vertical.px: 32
-padding-horizontal.px: 8
+padding-horizontal.px: 16
 align-self: center
 
 -- ftd.text: $hero-mobile.title
@@ -603,7 +603,8 @@ ftd.image-src icon:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-width.fixed.px: 400
+width.fixed.px if { ftd.device == "mobile"}: 360
+width.fixed.px if { ftd.device == "desktop"}: 400
 
 -- ftd.column:
 align-self: start
@@ -682,7 +683,6 @@ align-self: center
 width: fill-container
 
 -- ftd.column:
-width: fill-container
 align-content: center
 spacing.fixed.px: 30
 margin-horizontal.px: 20
@@ -744,12 +744,12 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 align-self: center
+
+-- ftd.column:
 width: fill-container
 
 -- ftd.row:
-align-content: center
 spacing.fixed.px: 30
-margin-horizontal.px: 160
 border-width.px: 10
 color: #ffffff
 
@@ -773,9 +773,7 @@ business requirements and the type of blockchain.
 -- end: ftd.row
 
 -- ftd.row:
-align-content: center
 border-width.px: 10
-margin-horizontal.px: 160
 spacing.fixed.px: 30
 color: #ffffff
 
@@ -798,6 +796,8 @@ Once you are ready to start blockchain technology development, we help you build
 blockchain product, from UI/UX to full front-end and back-end implementation
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -1059,25 +1059,28 @@ $mission-card.body
 spacing.fixed.px: 10
 
 -- ftd.image:
-src: $assets.files.images.linkedin.png
+src: $assets.files.images.linkedin2.png
 height.fixed.px: 30
 width.fixed.px: 30
-color: #353f4f
-link: https://www.linkedin.com/company/zindot/
+link: https://www.linkedin.com/company/trizwit/
 
 -- ftd.image:
-src: $assets.files.images.linkedin.png
+src: $assets.files.images.twitter2.png
 height.fixed.px: 30
 width.fixed.px: 30
-color: #353f4f
-link: mailto:info@zindot.in
+link: https://twitter.com/trizwit
 
 -- ftd.image:
-src: $assets.files.images.linkedin.png
+src: $assets.files.images.github.png
 height.fixed.px: 30
 width.fixed.px: 30
-color: #353f4f
-link: https://wa.me/916238296993
+link: https://github.com/Trizwit
+
+-- ftd.image:
+src: $assets.files.images.medium.png
+height.fixed.px: 30
+width.fixed.px: 30
+link: https://medium.com/@trizwit
 
 -- end: ftd.row
 
@@ -1129,6 +1132,46 @@ margin-bottom.px: 12
 
 -- end: team-card
 
+
+
+
+
+
+
+
+
+
+-- component footer:
+
+-- ftd.row:
+align-content: center
+width: fill-container 
+background.solid: Black
+
+-- ftd.row:
+align-self: center
+width: fill-container
+spacing.fixed.px if { ftd.device == "desktop" }: 800
+margin-horizontal.px: 131
+margin-bottom.px: 12
+background.solid: Yellow
+
+-- ftd.text: **Trizwit**
+color: #4e46e5
+role: $inherited.types.heading-small
+
+-- ftd.row:
+background.solid: red
+
+-- social-media:
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer
 
 
 
