@@ -674,11 +674,85 @@ $mission-card.body
 
 
 
+
+-- component social-media:
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.image:
+src: $assets.files.images.insta.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://www.instagram.com/zindotinnovations/
+
+
+-- ftd.image:
+src: $assets.files.images.linkedin.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://www.linkedin.com/company/zindot/
+
+-- ftd.image:
+src: $assets.files.images.mail.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: mailto:info@zindot.in
+
+-- ftd.image:
+src: $assets.files.images.whatsapp.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://wa.me/916238296993
+
+-- end: ftd.row
+
+-- end: social-media
+
+
+
+
+
+
+
+
+
+
 -- component team-card:
 caption name:
-string role:
+string pos:
 ftd.image-src avatar:
-ftd.image-src 
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+
+-- ftd.image:
+src: $team-card.avatar
+
+-- ftd.column:
+
+-- ftd.text: $team-card.name
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $team-card.pos
+role: $inherited.types.heading-tiny
+
+-- social-media:
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: team-card
+
+
+
+
+
 
 
 

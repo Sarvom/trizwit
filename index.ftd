@@ -30,4 +30,8 @@ The best in class solutions designed to meet your requirements.
 
 -- lib.contact: Contact Us
 
+-- lib.team-card: Able 
+pos: DevOps Engineer
+avatar: $assets.files.images.man.webp
+
 -- end: ftd.document
