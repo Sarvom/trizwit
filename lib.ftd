@@ -612,7 +612,7 @@ padding.px: 30
 shadow: $common.box
 border-radius.px: 20
 width: fill-container
-height.fixed.px: 350
+height.fixed.px: 300
 
 -- ftd.image:
 src: $stack-card.icon
@@ -912,6 +912,8 @@ $counter.body
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
+width: fill-container
+align-content: center
 
 -- count-card: 18
 
@@ -965,8 +967,7 @@ body body:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
-width.fixed.px: 400
-align-self: center
+width.fixed.px: 300
 align-content: center
 padding-vertical.px: 32
 shadow: $common.box
@@ -1143,7 +1144,6 @@ margin-bottom.px: 12
 -- component footer:
 
 -- ftd.row:
-align-content: center
 width: fill-container 
 background.solid: Black
 
@@ -1151,13 +1151,16 @@ background.solid: Black
 align-self: center
 margin-horizontal.px: 131
 margin-vertical.px: 12
+background.solid: red
 
 -- ftd.text: **Trizwit**
+width: fill-container
 color: #4e46e5
 role: $inherited.types.heading-small
 
 -- ftd.row:
 margin.px: 12
+background.solid: yellow
 
 -- social-media:
 
