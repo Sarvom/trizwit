@@ -603,8 +603,7 @@ ftd.image-src icon:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-width.fixed.px if { ftd.device == "mobile"}: 360
-width.fixed.px if { ftd.device == "desktop"}: 400
+width.fixed.px: 300
 
 -- ftd.column:
 align-self: start
@@ -612,7 +611,7 @@ padding.px: 30
 shadow: $common.box
 border-radius.px: 20
 width: fill-container
-height.fixed.px: 250
+height.fixed.px: 350
 
 -- ftd.image:
 src: $stack-card.icon
@@ -679,10 +678,10 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width: fill-container
+align-content: center
 
 -- ftd.column:
-background.solid: Yellow
-align-content: center
+;; background.solid: Yellow
 spacing.fixed.px: 30
 margin-horizontal.px: 20
 border-width.px: 10
@@ -746,7 +745,7 @@ width: fill-container
 align-content: center
 
 -- ftd.column:
-background.solid: Yellow
+;; background.solid: Red
 
 -- ftd.row:
 spacing.fixed.px: 30
