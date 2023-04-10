@@ -8,7 +8,7 @@ text-1: Home
 text-2: Services
 text-3: About
 text-4: Contact Us
-link: $assets.files.images.linkedin.png
+linkedin: $assets.files.images.linkedin.png
 twit: $assets.files.images.twitter.png
 
 -- lib.hero: **WEB 3.0 Development and Consulting**
