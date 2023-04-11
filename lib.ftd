@@ -606,15 +606,16 @@ ftd.image-src icon:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-width.fixed.px: 300
+width: fill-container
+align-content: center
 
 -- ftd.column:
 align-self: start
 padding.px: 30
 shadow: $common.box
 border-radius.px: 20
+height: fill-container
 width: fill-container
-height.fixed.px: 300
 
 -- ftd.image:
 src: $stack-card.icon
@@ -750,6 +751,9 @@ align-content: center
 align-self: center
 
 -- ftd.column:
+width: fill-container
+align-content: center
+align-self: center
 
 -- ftd.row:
 spacing.fixed.px: 30
@@ -830,7 +834,7 @@ color: #4e46e5
 
 -- ftd.iframe:
 src: https://form.typeform.com/to/Vl5flN4C
-width.fixed.px if { ftd.device == "desktop"}: 1200
+width: fill-container
 height.fixed.px: 600
 padding-horizontal.px: 150
 padding-top.px: 30
