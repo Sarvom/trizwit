@@ -1,0 +1,43 @@
+-- import: sarvom.github.io/trizwit/assets
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/trizwit/lib
+-- import: fifthtry.github.io/doc-site as ds
+
+-- ds.page: Trizwit Documentation
+site-logo: $assets.files.images.trizwit.jpeg
+
+-- ds.page.body:
+
+This document contains various components we have developed using `ftd`
+language.
+
+Below are a few sample components:
+
+-- ds.h3: Navbar Component
+
+We have developed the `navbar` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.navbar: **Zindot**
+pic: $assets.files.images.zindot.png 
+text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
+
+-- ds.rendered.output:
+
+-- lib.navbar: **Zindot**
+pic: $assets.files.images.zindot.png 
+text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
