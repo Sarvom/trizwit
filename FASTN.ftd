@@ -1,7 +1,7 @@
 -- import: fastn
 
 -- fastn.package: sarvom.github.io/trizwit
+favicon: images/trizwit.jpeg
 
 -- fastn.dependency: fastn-community.github.io/opensans-typography
-
 -- fastn.dependency: fifthtry.github.io/doc-site
