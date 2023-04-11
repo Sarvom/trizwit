@@ -1015,9 +1015,9 @@ ftd.image-src icon:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
+;; width: fill-container
+height: fill-container
 padding.px: 16
-max-width.fixed.px: 300
-height.fixed.px: 300
 border-width.px: 1
 border-radius.px: 20
 border-color: #4e46e5
@@ -1041,6 +1041,7 @@ border-left-width.px: 1
 -- ftd.text: $mission-card.name
 role: $inherited.types.heading-tiny
 margin-bottom.px: 8
+color: #4e46e5
 
 -- ftd.text: 
 role: $inherited.types.label-large
@@ -1115,25 +1116,145 @@ string twitter:
 string github:
 ftd.type-data types: $opensans-typography.types
 
--- ftd.row:
+-- ftd.column:
+width: fill-container
+
+-- team-card-mobile:
+if: { ftd.device == "mobile" }
+name: $team-card.name
+pos: $team-card.pos
+job: $team-card.job
+avatar: $team-card.avatar
+linkedin: $team-card.linkedin
+twitter: $team-card.twitter
+github: $team-card.github
+types: $team-card.types
+
+-- team-card-desktop:
+if: { ftd.device == "desktop" }
+name: $team-card.name
+pos: $team-card.pos
+job: $team-card.job
+avatar: $team-card.avatar
+linkedin: $team-card.linkedin
+twitter: $team-card.twitter
+github: $team-card.github
+types: $team-card.types
+
+-- end: ftd.column
+
+-- end: team-card
+
+
+
+
+
+
+
+
+
+
+-- component team-card-mobile:
+caption name:
+string pos:
+string job:
+ftd.image-src avatar:
+string linkedin:
+string twitter:
+string github:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+align-self: center
 align-content: center
-padding-horizontal.px if { ftd.device == "desktop" }: 128
+padding-horizontal.px: 128
 padding-vertical.px: 48
 
 -- ftd.image:
-src: $team-card.avatar
+src: $team-card-mobile.avatar
+
+-- ftd.text: $team-card-mobile.name
+role: $inherited.types.heading-tiny
+text-align: center
+
+-- ftd.text: $team-card-mobile.pos
+role: $inherited.types.heading-tiny
+text-align: center
+margin-bottom.px: 4
+
+-- ftd.text: $team-card-mobile.job
+role: $inherited.types.heading-tiny
+text-align: center
+margin-bottom.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.image:
+src: $assets.files.images.linkedin2.png
+height.fixed.px: 24
+width.fixed.px: 24
+link: $team-card-mobile.linkedin
+
+-- ftd.image:
+src: $assets.files.images.twitter2.png
+height.fixed.px: 24
+width.fixed.px: 24
+link: $team-card-mobile.twitter
+
+-- ftd.image:
+src: $assets.files.images.github.png
+height.fixed.px: 24
+width.fixed.px: 24
+link: $team-card-mobile.github
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: team-card-mobile
+
+
+
+
+
+
+
+
+
+
+-- component team-card-desktop:
+caption name:
+string pos:
+string job:
+ftd.image-src avatar:
+string linkedin:
+string twitter:
+string github:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+align-self: center
+align-content: center
+padding-horizontal.px: 128
+padding-vertical.px: 48
+
+-- ftd.image:
+src: $team-card-desktop.avatar
 
 -- ftd.column:
 padding-left.px: 32
 
--- ftd.text: $team-card.name
+-- ftd.text: $team-card-desktop.name
 role: $inherited.types.heading-tiny
 
--- ftd.text: $team-card.pos
+-- ftd.text: $team-card-desktop.pos
 role: $inherited.types.heading-tiny
 margin-bottom.px: 4
 
--- ftd.text: $team-card.job
+-- ftd.text: $team-card-desktop.job
 role: $inherited.types.heading-tiny
 margin-bottom.px: 12
 
@@ -1144,19 +1265,19 @@ spacing.fixed.px: 10
 src: $assets.files.images.linkedin2.png
 height.fixed.px: 24
 width.fixed.px: 24
-link: $team-card.linkedin
+link: $team-card-desktop.linkedin
 
 -- ftd.image:
 src: $assets.files.images.twitter2.png
 height.fixed.px: 24
 width.fixed.px: 24
-link: $team-card.twitter
+link: $team-card-desktop.twitter
 
 -- ftd.image:
 src: $assets.files.images.github.png
 height.fixed.px: 24
 width.fixed.px: 24
-link: $team-card.github
+link: $team-card-desktop.github
 
 -- end: ftd.row
 
@@ -1164,7 +1285,7 @@ link: $team-card.github
 
 -- end: ftd.row
 
--- end: team-card
+-- end: team-card-desktop
 
 
 
