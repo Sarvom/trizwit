@@ -1101,10 +1101,14 @@ caption name:
 string pos:
 string job:
 ftd.image-src avatar:
+string linkedin:
+string twitter:
+string github:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-padding-horizontal.px: 128
+align-content: center
+padding-horizontal.px if { ftd.device == "desktop" }: 128
 padding-vertical.px: 48
 
 -- ftd.image:
@@ -1124,7 +1128,28 @@ margin-bottom.px: 4
 role: $inherited.types.heading-tiny
 margin-bottom.px: 12
 
--- social-media:
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.image:
+src: $assets.files.images.linkedin2.png
+height.fixed.px: 24
+width.fixed.px: 24
+link: $team-card.linkedin
+
+-- ftd.image:
+src: $assets.files.images.twitter2.png
+height.fixed.px: 24
+width.fixed.px: 24
+link: $team-card.twitter
+
+-- ftd.image:
+src: $assets.files.images.github.png
+height.fixed.px: 24
+width.fixed.px: 24
+link: $team-card.github
+
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -1142,31 +1167,28 @@ margin-bottom.px: 12
 
 
 -- component footer:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
+align-content: left
 width: fill-container 
-background.solid: Black
+spacing.fixed.px: 80
+margin-bottom.px: 10
+padding.px: 10
 
 -- ftd.row:
-align-self: center
-margin-horizontal.px: 131
-margin-vertical.px: 12
-background.solid: red
+align-self: start
+width: fill-container
 
 -- ftd.text: **Trizwit**
-width: fill-container
+padding-left.px: 10
+margin-bottom.px: 10
 color: #4e46e5
 role: $inherited.types.heading-small
 
--- ftd.row:
-margin.px: 12
-background.solid: yellow
+-- end: ftd.row
 
 -- social-media:
-
--- end: ftd.row
-
--- end: ftd.row
 
 -- end: ftd.row
 
