@@ -14,29 +14,180 @@ Below are a few sample components:
 
 -- ds.h3: Navbar Component
 
-We have developed the `navbar` component for [zindot.in](https://zindot.in/), 
+We have developed the `navbar` component for [trizwit.com](https://www.trizwit.com/), 
 which matches the design currently displayed on the live site.
 
 -- ds.rendered:
 
 -- ds.rendered.input:
 
-\-- lib.navbar: **Zindot**
-pic: $assets.files.images.zindot.png 
-text1: Home
-text2: Services
-text3: Training
-text4: Contact Us
+\-- lib.navbar: **Trizwit**
+text-1: Home
+text-2: Services
+text-3: About
+text-4: Contact Us
+linkedin: $assets.files.images.linkedin.png
+twit: $assets.files.images.twitter.png
 
 -- ds.rendered.output:
 
--- lib.navbar: **Zindot**
-pic: $assets.files.images.zindot.png 
-text1: Home
-text2: Services
-text3: Training
-text4: Contact Us
+-- lib.navbar: **Trizwit**
+text-1: Home
+text-2: Services
+text-3: About
+text-4: Contact Us
+linkedin: $assets.files.images.linkedin.png
+twit: $assets.files.images.twitter.png
 
 -- end: ds.rendered.output
 
 -- end: ds.rendered
+
+-- ds.h3: Hero Component
+
+We have developed the `hero` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.hero: **WEB 3.0 Development and Consulting**
+cta-text-1: Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
+pic: $assets.files.images.hero_bg.png
+
+-- ds.rendered.output:
+
+-- lib.hero: **WEB 3.0 Development and Consulting**
+cta-text-1: Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
+pic: $assets.files.images.hero_bg.png
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Domain-Card Component
+
+We have developed the `domain-card` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.domain-card:
+
+-- ds.rendered.output:
+
+-- lib.domain-card:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: About Component
+
+We have developed the `about` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.about: **Our Blockchain consulting process**
+
+**From ideation to complete development and business scaling solutions, we fulfill
+all your needs.**
+
+-- ds.rendered.output:
+
+-- lib.about: **Our Blockchain consulting process**
+
+**From ideation to complete development and business scaling solutions, we fulfill
+all your needs.**
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Process Component
+
+We have developed the `process` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.process:
+
+-- ds.rendered.output:
+
+-- lib.process:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Counter Component
+
+We have developed the `counter` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.counter: **Trusted by companies across the world**
+
+The best in class solutions designed to meet your requirements.
+
+-- ds.rendered.output:
+
+-- lib.counter: **Trusted by companies across the world**
+
+The best in class solutions designed to meet your requirements.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Contact Component
+
+We have developed the `contact` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.contact: Contact Us
+
+-- ds.rendered.output:
+
+-- lib.contact: Contact Us
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Footer Component
+
+We have developed the `footer` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.footer:
+
+-- ds.rendered.output:
+
+-- lib.footer:
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- end: ds.page

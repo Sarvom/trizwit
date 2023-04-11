@@ -557,6 +557,8 @@ body body:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
+align-self: center
+align-content: center
 padding-horizontal.px: 20
 padding-top.px: 96
 margin-horizontal.px if { ftd.device == "desktop" }: 160
@@ -682,6 +684,8 @@ width: fill-container
 align-content: center
 
 -- ftd.column:
+align-self: center
+align-content: center
 spacing.fixed.px: 30
 margin-horizontal.px: 20
 border-width.px: 10
@@ -743,6 +747,7 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 width: fill-container
 align-content: center
+align-self: center
 
 -- ftd.column:
 
