@@ -30,6 +30,7 @@ open, secure, and equitable internet.
 -- ftd.column:
 if: { ftd.device == "mobile" }
 align-content: center
+align-self: center
 margin-horizontal.px: 32
 spacing.fixed.px: 10
 
@@ -61,13 +62,10 @@ technologies and promote their adoption and responsible use.
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
-padding-horizontal.px: 32
-
--- ftd.row:
-if: { ftd.device == "desktop" }
-width: fill-container
-margin-horizontal.px: 116
-spacing.fixed.px: 30
+margin-horizontal.px: 96
+spacing.fixed.px: 20
+align-content: center
+align-self: center
 
 -- lib.mission-card: **Guidance**
 icon: $assets.files.images.guidance.png
@@ -101,6 +99,8 @@ technologies and promote their adoption and responsible use.
 if: { ftd.device == "mobile" }
 margin-horizontal.px: 32
 align-content: center
+align-self: center
+width: fill-container
 
 -- lib.team-card: **Able Varghese**
 pos: Co-Founder
@@ -137,14 +137,14 @@ github: https://github.com/binilvjacob
 -- end: ftd.column
 
 -- ftd.column:
-width: fill-container
-align-content: center
 if: { ftd.device == "desktop" }
-padding-horizontal.px: 32
+align-self: center
+align-content: center
+width: fill-container
 
 -- ftd.row:
+align-self: center
 align-content: center
-spacing.fixed.px: 30
 
 -- lib.team-card: **Able Varghese**
 pos: Co-Founder
@@ -165,8 +165,8 @@ github: https://github.com/ARK-ASWINRAJ/
 -- end: ftd.row
 
 -- ftd.row:
+align-self: center
 align-content: center
-spacing.fixed.px: 30
 
 -- lib.team-card: **Athul A Kumar**
 pos: Co-Founder

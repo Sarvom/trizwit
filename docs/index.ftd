@@ -190,4 +190,89 @@ which matches the design currently displayed on the live site.
 
 -- end: ds.rendered
 
+-- ds.h3: Page Component
+
+We have developed the `VISION` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.page: VISION
+
+To become a leading Web3 consultancy company that empowers individuals, businesses, and 
+organizations to harness the full potential of decentralized technologies and build a more 
+open, secure, and equitable internet.
+
+-- ds.rendered.output:
+
+-- lib.page: VISION
+
+To become a leading Web3 consultancy company that empowers individuals, businesses, and 
+organizations to harness the full potential of decentralized technologies and build a more 
+open, secure, and equitable internet.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Footer Component
+
+We have developed the `footer` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.team-card: **Able Varghese**
+pos: Co-Founder
+job: DevOps Engineer
+avatar: $assets.files.images.man.webp
+linkedin: https://www.linkedin.com/in/ablevargheseme/
+twitter: https://twitter.com/ablevargheseme
+github: https://github.com/ablevargheseme
+
+-- ds.rendered.output:
+
+-- lib.team-card: **Able Varghese**
+pos: Co-Founder
+job: DevOps Engineer
+avatar: $assets.files.images.man.webp
+linkedin: https://www.linkedin.com/in/ablevargheseme/
+twitter: https://twitter.com/ablevargheseme
+github: https://github.com/ablevargheseme
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Footer Component
+
+We have developed the `footer` component for [trizwit.com](https://www.trizwit.com/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.mission-card: **Guidance**
+icon: $assets.files.images.guidance.png
+
+To provide expert advice, guidance, and support to clients seeking to integrate Web3 
+technologies into their operations, products, and services.
+
+-- ds.rendered.output:
+
+-- lib.mission-card: **Guidance**
+icon: $assets.files.images.guidance.png
+
+To provide expert advice, guidance, and support to clients seeking to integrate Web3 
+technologies into their operations, products, and services.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
 -- end: ds.page
