@@ -29,7 +29,9 @@ open, secure, and equitable internet.
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
-margin-horizontal.px: 16
+align-content: center
+margin-horizontal.px: 32
+spacing.fixed.px: 10
 
 -- lib.mission-card: **Guidance**
 icon: $assets.files.images.guidance.png
@@ -95,25 +97,96 @@ technologies and promote their adoption and responsible use.
 
 -- lib.page: **Our Team**
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+margin-horizontal.px: 32
+align-content: center
+
 -- lib.team-card: **Able Varghese**
 pos: Co-Founder
 job: DevOps Engineer
 avatar: $assets.files.images.man.webp
+linkedin: https://www.linkedin.com/in/ablevargheseme/
+twitter: https://twitter.com/ablevargheseme
+github: https://github.com/ablevargheseme
 
 -- lib.team-card: **AswinRaj K**
 pos: Co-Founder
 job: Full Stack Developer
 avatar: $assets.files.images.man3.webp
+linkedin: https://www.linkedin.com/in/aswinrajkailath/
+twitter: https://twitter.com/aswinrajkailath
+github: https://github.com/ARK-ASWINRAJ/
 
 -- lib.team-card: **Athul A Kumar**
 pos: Co-Founder
 job: Front-End Developer
 avatar: $assets.files.images.man2.webp
+linkedin: https://www.linkedin.com/in/athulakumar/
+twitter: https://twitter.com/AthulAKumar8
+github: https://github.com/AthulA10
 
 -- lib.team-card: **Binil V Jacob**
 pos: Co-Founder
 job: Smart Contract Developer
 avatar: $assets.files.images.man4.webp
+linkedin: https://www.linkedin.com/in/binilvjacob/
+twitter: https://twitter.com/the_bvj
+github: https://github.com/binilvjacob
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+align-content: center
+if: { ftd.device == "desktop" }
+padding-horizontal.px: 32
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 30
+
+-- lib.team-card: **Able Varghese**
+pos: Co-Founder
+job: DevOps Engineer
+avatar: $assets.files.images.man.webp
+linkedin: https://www.linkedin.com/in/ablevargheseme/
+twitter: https://twitter.com/ablevargheseme
+github: https://github.com/ablevargheseme
+
+-- lib.team-card: **AswinRaj K**
+pos: Co-Founder
+job: Full Stack Developer
+avatar: $assets.files.images.man3.webp
+linkedin: https://www.linkedin.com/in/aswinrajkailath/
+twitter: https://twitter.com/aswinrajkailath
+github: https://github.com/ARK-ASWINRAJ/
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 30
+
+-- lib.team-card: **Athul A Kumar**
+pos: Co-Founder
+job: Front-End Developer
+avatar: $assets.files.images.man2.webp
+linkedin: https://www.linkedin.com/in/athulakumar/
+twitter: https://twitter.com/AthulAKumar8
+github: https://github.com/AthulA10
+
+-- lib.team-card: **Binil V Jacob**
+pos: Co-Founder
+job: Smart Contract Developer
+avatar: $assets.files.images.man4.webp
+linkedin: https://www.linkedin.com/in/binilvjacob/
+twitter: https://twitter.com/the_bvj
+github: https://github.com/binilvjacob
+
+-- end: ftd.row
+
+-- end: ftd.column
 
 -- lib.contact: Contact Us
 
