@@ -610,6 +610,7 @@ align-self: start
 padding.px: 30
 shadow: $common.box
 border-radius.px: 20
+height.fixed.px: 250
 
 -- ftd.image:
 src: $stack-card.icon
@@ -743,9 +744,11 @@ ftd.type-data types: $opensans-typography.types
 width: fill-container
 
 -- ftd.row:
+margin-horizontal.px: 100
+align-self: center
 align-content: center
 width: fill-container
-spacing.fixed.px: 30
+spacing.fixed.px: 40
 color: #ffffff
 wrap: true
 
