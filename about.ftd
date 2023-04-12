@@ -143,6 +143,8 @@ align-content: center
 width: fill-container
 
 -- ftd.row:
+
+-- ftd.column:
 align-self: center
 align-content: center
 
@@ -154,20 +156,6 @@ linkedin: https://www.linkedin.com/in/ablevargheseme/
 twitter: https://twitter.com/ablevargheseme
 github: https://github.com/ablevargheseme
 
--- lib.team-card: **AswinRaj K**
-pos: Co-Founder
-job: Full Stack Developer
-avatar: $assets.files.images.man3.webp
-linkedin: https://www.linkedin.com/in/aswinrajkailath/
-twitter: https://twitter.com/aswinrajkailath
-github: https://github.com/ARK-ASWINRAJ/
-
--- end: ftd.row
-
--- ftd.row:
-align-self: center
-align-content: center
-
 -- lib.team-card: **Athul A Kumar**
 pos: Co-Founder
 job: Front-End Developer
@@ -176,6 +164,20 @@ linkedin: https://www.linkedin.com/in/athulakumar/
 twitter: https://twitter.com/AthulAKumar8
 github: https://github.com/AthulA10
 
+-- end: ftd.column
+
+-- ftd.column:
+align-self: center
+align-content: center
+
+-- lib.team-card: **AswinRaj K**
+pos: Co-Founder
+job: Full Stack Developer
+avatar: $assets.files.images.man3.webp
+linkedin: https://www.linkedin.com/in/aswinrajkailath/
+twitter: https://twitter.com/aswinrajkailath
+github: https://github.com/ARK-ASWINRAJ/
+
 -- lib.team-card: **Binil V Jacob**
 pos: Co-Founder
 job: Smart Contract Developer
@@ -183,6 +185,8 @@ avatar: $assets.files.images.man4.webp
 linkedin: https://www.linkedin.com/in/binilvjacob/
 twitter: https://twitter.com/the_bvj
 github: https://github.com/binilvjacob
+
+-- end: ftd.column
 
 -- end: ftd.row
 

@@ -4,10 +4,10 @@
 -- ftd.document: Trizwit
 
 -- lib.navbar: **Trizwit**
-text-1: Home
-text-2: Services
-text-3: About
-text-4: Contact Us
+text-1: **Home**
+text-2: **Services**
+text-3: **About**
+text-4: **Contact Us**
 linkedin: $assets.files.images.linkedin.png
 twit: $assets.files.images.twitter.png
 

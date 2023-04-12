@@ -112,7 +112,7 @@ margin-bottom.px: 4
 
 -- ftd.text: $navbar-mobile.text-1
 color: #c091fb
-role: $inherited.types.label-large
+role: $inherited.types.label-small
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
@@ -120,7 +120,7 @@ link: /trizwit/
 
 -- ftd.text: $navbar-mobile.text-2
 color: #c091fb
-role: $inherited.types.label-large
+role: $inherited.types.label-small
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
@@ -128,7 +128,7 @@ link: index.html#services
 
 -- ftd.text: $navbar-mobile.text-3
 color: #c091fb
-role: $inherited.types.label-large
+role: $inherited.types.label-small
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
@@ -136,7 +136,7 @@ link: about/
 
 -- ftd.text: $navbar-mobile.text-4
 color: #c091fb
-role: $inherited.types.label-large
+role: $inherited.types.label-small
 text-align: center
 margin-bottom.px: 4
 white-space: nowrap
@@ -384,17 +384,13 @@ caption name:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.text: $button.name
-role: $inherited.types.label-large
+role: $inherited.types.button-large
 text-align: center
-padding-left.px: 30
-padding-right.px: 30
-padding-top.px: 10
-padding-bottom.px: 10
+margin-vertical.px: 16
+padding-horizontal.px: 24
+padding-vertical.px: 12
 border-width.px: 1
-border-top-left-radius.px: 10
-border-top-right-radius.px: 10
-border-bottom-left-radius.px: 10
-border-bottom-right-radius.px: 10
+border-radius.px: 5
 background.solid: #4e46e5
 border-color: #c091fb
 color: white
@@ -470,7 +466,6 @@ role: $inherited.types.heading-small
 padding-vertical.px: 12
 
 -- ftd.row:
-margin-vertical.px: 16
 
 -- button: Our Services
 
@@ -528,7 +523,6 @@ role: $inherited.types.heading-small
 padding-vertical.px: 12
 
 -- ftd.row:
-margin-vertical.px: 16
 
 -- button: Our Services
 
@@ -629,11 +623,12 @@ width.fixed.px: 50
 text-align: start
 color: Black
 role: $inherited.types.heading-tiny
+margin-bottom.px: 8
 
 
 -- ftd.text: 
 color: #353f4f
-role: $inherited.types.label-large
+role: $inherited.types.label-small
 text-align: start
 
 $stack-card.body
@@ -752,16 +747,13 @@ ftd.type-data types: $opensans-typography.types
 width: fill-container
 align-content: center
 align-self: center
-
--- ftd.column:
-width: fill-container
-align-content: center
-align-self: center
+margin-horizontal.px: 160
 
 -- ftd.row:
 spacing.fixed.px: 30
 border-width.px: 10
 color: #ffffff
+margin-horizontal.px: 160
 
 -- stack-card: Ideation
 icon: $assets.files.images.ideation.png
@@ -786,6 +778,7 @@ business requirements and the type of blockchain.
 border-width.px: 10
 spacing.fixed.px: 30
 color: #ffffff
+margin-horizontal.px: 160
 
 -- stack-card: PoC
 icon: $assets.files.images.poc.png
@@ -797,7 +790,7 @@ minimum viable features.
 icon: $assets.files.images.integration.png
 
 Our Blockchain Consultants help clients identify if the blockchain technology can be 
-integrated into their business operations and environment.define the business goals and workflow for your system
+integrated into their business operations and environment.
 
 -- stack-card: Development
 icon: $assets.files.images.development.png
@@ -806,8 +799,6 @@ Once you are ready to start blockchain technology development, we help you build
 blockchain product, from UI/UX to full front-end and back-end implementation
 
 -- end: ftd.row
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -1239,8 +1230,8 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 width: fill-container
+height:fill-container
 align-self: center
-align-content: center
 padding-horizontal.px: 128
 padding-vertical.px: 48
 
