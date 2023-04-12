@@ -187,7 +187,7 @@ ftd.type-data types: $opensans-typography.types
 align-content: left
 width: fill-container
 border-color: white
-padding-horizontal.px: 40 
+padding-horizontal.px: 16 
 spacing.fixed.px: 40
 margin-bottom.px: 10
 types: $opensans-typography.types
@@ -201,8 +201,7 @@ align-content: left
 types: $opensans-typography.types
 
 -- ftd.text: $navbar-desktop.name
-padding-left.px: 10
-padding-bottom.px: 5
+padding.px: 12
 color: #4e46e5
 role: $inherited.types.heading-medium
 
@@ -245,7 +244,7 @@ link: index.html#contact
 -- ftd.row:
 align-self: end
 spacing.fixed.px: 30
-margin-bottom.px: 8
+margin-bottom.px: 20
 
 -- ftd.image:
 height.fixed.px: 32
@@ -628,8 +627,8 @@ margin-bottom.px: 8
 
 -- ftd.text: 
 color: #353f4f
-role: $inherited.types.label-small
-text-align: start
+role: $inherited.types.button-medium
+text-align: justify
 
 $stack-card.body
 
