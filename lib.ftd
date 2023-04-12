@@ -627,7 +627,7 @@ margin-bottom.px: 8
 
 -- ftd.text: 
 color: #353f4f
-role: $inherited.types.button-medium
+role: $inherited.types.label-large
 text-align: justify
 
 $stack-card.body
