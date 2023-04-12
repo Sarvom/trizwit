@@ -935,6 +935,7 @@ Smart Contracts On-Chain
 if: { ftd.device == "desktop" }
 width: fill-container
 align-content: center
+margin-horizontal.px: 160
 
 -- count-card: 18
 
@@ -1060,7 +1061,7 @@ $mission-card.body
 -- component social-media:
 
 -- ftd.row:
-spacing.fixed.px: 10
+spacing.fixed.px: 20
 
 -- ftd.image:
 src: $assets.files.images.linkedin2.png
@@ -1292,28 +1293,35 @@ link: $team-card-desktop.github
 -- component footer:
 ftd.type-data types: $opensans-typography.types
 
--- ftd.row:
-align-content: left
+-- ftd.column:
+align-content: center
 width: fill-container 
-spacing.fixed.px: 80
 margin-bottom.px: 10
-padding.px: 10
+background.solid: #0f172a
 
 -- ftd.row:
-align-self: start
 width: fill-container
 
--- ftd.text: **Trizwit**
-padding-left.px: 10
-margin-bottom.px: 10
-color: #4e46e5
-role: $inherited.types.heading-small
+-- ftd.row:
+align-content: center
+align-self: center
+width: fill-container
+padding-vertical.px: 16
+padding-horizontal.px: 8
+spacing.fixed.px: 80
 
--- end: ftd.row
+-- ftd.text: 2022 Trizwit. All rights reserved
+padding-left.px: 10
+color: #6b7280
+role: $inherited.types.label-large
 
 -- social-media:
 
 -- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
 
 -- end: footer
 
