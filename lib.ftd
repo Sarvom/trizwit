@@ -356,15 +356,18 @@ ftd.image-src icon:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
+padding-horizontal.px: 16
+padding-vertical.px: 8
 
 -- ftd.image:
 src: $domain.icon
-height.fixed.px: 50
-width.fixed.px: 50
+height.fixed.px: 32
+width.fixed.px: 32
+margin-right.px: 8
 
 -- ftd.text: $domain.title
 role: $inherited.types.heading-tiny
-padding-top.px: 10
+padding-top.px: 2
 
 -- end: ftd.row
 
@@ -462,7 +465,7 @@ padding-vertical.px: 12
 height: fill-container
 
 -- ftd.text: $hero-mobile.cta-text-1
-color: #000000
+color: #303030
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
 
@@ -520,7 +523,7 @@ padding-vertical.px: 12
 height: fill-container
 
 -- ftd.text: $hero-desktop.cta-text-1
-color: #000000
+color: #303030
 role: $inherited.types.heading-small 
 padding-vertical.px: 12
 
@@ -571,7 +574,7 @@ margin-bottom.px: 80
 
 -- ftd.text: $about.title
 text-align: center
-color: #000000
+color: #111827
 role: $inherited.types.heading-large
 margin-bottom.px: 8
 
@@ -580,7 +583,7 @@ role: $inherited.types.heading-small
 padding-top.px: 10
 padding-horizontal.px if { ftd.device == "desktop" }: 200
 text-align: center
-color: #353f4f
+color: #6b7280
 
 $about.body
 
@@ -906,7 +909,7 @@ margin-vertical.px: 128
 margin-horizontal.px: 8
 
 -- ftd.text: $counter.title
-color: #000000
+color: #111827
 role: $inherited.types.heading-large
 text-align: center
 
@@ -915,7 +918,7 @@ align-self: center
 role: $inherited.types.heading-small
 padding-vertical.px: 24
 text-align: center
-color: #353f4f
+color: #6b7280
 
 $counter.body
 
