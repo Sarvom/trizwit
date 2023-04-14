@@ -960,7 +960,7 @@ body body:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
-width.fixed.px: 300
+width.fixed.px: 400
 align-content: center
 padding-vertical.px: 32
 shadow: $common.box
